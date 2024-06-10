@@ -13,7 +13,6 @@ body
     align-items: center;
     position: relative;
     top: 20dvh;
-    /* z-index: 999; */
 }
 #outer-grid-container
 {

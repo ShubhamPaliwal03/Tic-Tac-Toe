@@ -4,6 +4,7 @@ const turn_image = document.getElementById('turn-image');
 const turn_text = document.getElementById('turn-text');
 const winStrikeLine = document.getElementById('line');
 const reset_btn = document.getElementById('reset-button');
+const confetti_btn = document.getElementById('confetti-button');
 
 let turn = "x"; // as x always starts first
 let turns = 0;
@@ -65,22 +66,20 @@ const checkWin = () => {
                     cell.removeEventListener('click', playTurn);
                 });
 
-                return true;
+                confetti_btn.click();
+
+                new Audio('sounds/victory-sound.mp3').play();
             }
-            return false;
         });
 };
 
 const playTurn = (event) => {
 
     const cell = event.target;
-    console.log(event.target)
-    console.log(event.currentTarget)
 
     if (cell.id === "") {
 
-        console.log(turns)
-        new Audio('sounds/ting.mp3').play();
+        new Audio('sounds/piece_move-sound.mp3').play();
 
         if (turn === "x") {
 
