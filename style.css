@@ -1,0 +1,257 @@
+body
+{
+    background-color: #192a32;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+#outer-flexbox-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20dvh;
+    /* z-index: 999; */
+}
+#outer-grid-container
+{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.xo-image
+{
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 0.2em;
+}
+.x-o-image
+{
+    width: 2em;
+}
+.o-image
+{
+    /* filter: hue-rotate(340deg); */
+    filter: hue-rotate(571deg);
+}
+.x-image
+{
+    filter: hue-rotate(121deg);
+}
+#reset-button
+{
+    width: 2.5em;
+    height: 2.5em;
+}
+.grid-container > div
+{
+    border-radius: 7px;
+}
+#grid-container-1
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: start;
+    align-items: end;
+    column-gap: 0.5em;
+}
+#grid-container-1 > div
+{
+    width: 5em;
+    height: 3.5em;
+}
+.row-1-flexbox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+#turn-container
+{
+    background-color: #1f3540;
+    /* in case image does not load and alt text appears */
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    padding: 0 0.5em;
+}
+#turn-image
+{
+    width: 1em;
+    margin-right: 0.5em;
+}
+#turn-text
+{
+    font-size: 1em;
+    color: white;
+}
+#grid-container-2
+{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    gap: 1em;
+    /* in case image does not load and alt text appears */
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+/* #grid-container-2 > div */
+.cell
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f3540;
+    box-shadow: -10px 10px 5px #0f2027;
+    width: 5em;
+    height: 5em;
+    border-radius: 7px;
+    border: none;
+}
+#line
+{
+    position: absolute;
+    background-color: white;
+    height: 4px;
+    display: none;
+    top: 0px;
+    left: 0px;
+}
+#grid-container-3
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.row-3-flexbox
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+}
+.row-3-flexbox:nth-child(1)
+{
+    /* background-color: #00dfff; */
+    /* background-color: #00eee6; */
+    /* background-color: #20cdc7; */
+    background-color: #31e4cd;
+}
+.row-3-flexbox:nth-child(2)
+{
+    background-color: white;
+}
+.row-3-flexbox:nth-child(3)
+{
+    /* background-color: #ffb400; */
+    background-color: #e6a12b;
+}
+.scorecard-title
+{
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.scorecard-score
+{
+    font-weight: 800;
+}
+footer
+{
+    position: fixed;
+    bottom: 1dvh;
+    color: white;
+}
+@media(height < 650px)
+{
+    body
+    {
+        scale: 0.8;
+    }
+    footer
+    {
+        position: fixed;
+        top: 108dvh;
+    }
+}
+@media(height < 570px)
+{
+    body
+    {
+        scale: 0.75;
+    }
+    #outer-flexbox-container
+    {
+        top: 10dvh;
+    }
+}
+@media(height < 490px)
+{
+    body
+    {
+        scale: 0.7;
+    }
+    #outer-flexbox-container
+    {
+        top: 5dvh;
+    }
+}
+@media(height < 450px)
+{
+    body
+    {
+        scale: 0.6;
+    }
+    #outer-flexbox-container
+    {
+        top: 0dvh;
+    }
+}
+/* #bcg-x
+{
+    position: absolute;
+    bottom: -10em;
+    left: -4.5em;
+    transform: rotate(23deg);
+    height: 30em;
+    width: 30em;
+}
+#bcg-o
+{
+    position: absolute;
+    top: -10em;
+    right: -10em;
+    height: 30em;
+    width: 30em;
+}
+@media(max-width: 420px)
+{
+    #bcg-x
+    {
+        position: absolute;
+        bottom: -3em;
+        left: -2em;
+        transform: rotate(27deg);
+        height: 20em;
+        width: 20em;
+    }
+    #bcg-o
+    {
+        position: absolute;
+        top: -5em;
+        right: -5em;
+        height: 20em;
+        width: 20em;
+    }
+} */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div id="outer-flexbox-container">
+        <div id="outer-grid-container">
+            <div class="grid-container" id="grid-container-1">
+                <div class="row-1-flexbox">
+                    <img class="xo-image x-image" src="images/x_image.svg" alt="X">
+                    <img class="xo-image o-image" src="images/o_image.png" alt="O">
+                </div>
+                <div class="row-1-flexbox" id="turn-container">
+                    <img class="x-image" id="turn-image" src="images/x_image.svg" alt="x">
+                    <div id="turn-text">TURN</div>
+                </div>
+                <div class="row-1-flexbox">
+                    <button id="reset-button">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="grid-container game-grid" id="grid-container-2">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div id="line"></div>
+            </div>
+            <div class="grid-container" id="grid-container-3">
+                <div class="row-3-flexbox">
+                    <div class="scorecard-title">X (YOU)</div>
+                    <div class="scorecard-score">14</div>
+                </div>
+                <div class="row-3-flexbox">
+                    <div class="scorecard-title">TIES</div>
+                    <div class="scorecard-score">32</div>
+                </div>
+                <div class="row-3-flexbox">
+                    <div class="scorecard-title">O (CPU)</div>
+                    <div class="scorecard-score">11</div>
+                </div>
+            </div>
+        </div>
+        <footer>Made With&nbsp;❤️&nbsp;In&nbsp;&nbsp;🇮🇳</footer>
+    </div>
+    <!-- <img id="bcg-x" src="images/x_image.svg" alt="">
+    <img id="bcg-o" src="images/o_image.png" alt=""> -->
+</body>
+<script src="https://kit.fontawesome.com/4ca0345904.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
