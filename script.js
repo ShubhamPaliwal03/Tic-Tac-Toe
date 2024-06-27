@@ -6,7 +6,7 @@ const winStrikeLine = document.getElementById('line');
 const reset_btn = document.getElementById('reset-button');
 const confetti_btn = document.getElementById('confetti-button');
 const victory_sound = new Audio('sounds/victory-sound.mp3');
-victory_sound.volume = 0.2;
+victory_sound.volume = 0.1;
 
 let turn = "x"; // as x always starts first
 let turns = 0;
